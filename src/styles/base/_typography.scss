@@ -1,12 +1,18 @@
+@font-face {
+  font-family: 'Roboto Mono for Powerline';
+  src: local('Roboto Mono for Powerline'), url('https://github.com/tttam0113/redux-vscode-base16-term/tree/master/public/assets/fonts/Roboto\ Mono\ for\ Powerline.ttf') format("ttf")
+}
+
+
 body {
-    font-family: $base-font-family;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.5;
+  font-family: $base-font-family;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 h1 {
-    font-weight: 600;
-    font-size: 3.6rem;
-    margin-top: 0;
+  font-weight: 600;
+  font-size: 3.6rem;
+  margin-top: 0;
 }

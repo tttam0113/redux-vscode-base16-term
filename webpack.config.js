@@ -57,6 +57,10 @@ module.exports = env => {
           exclude: [/\.(js|mjs|jsx)$/, /\.html$/, /\.json$/],
           loader: 'raw-loader',
         },
+        {
+          test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+          loader: 'url-loader',
+        },
       ],
     },
     plugins: [
