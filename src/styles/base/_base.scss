@@ -1,0 +1,23 @@
+/* Reset universal selector */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 10px; */
+    font-size: 62.5%;
+    /* 0.625 * 16 = 10 */
+}
+
+body {
+    box-sizing: border-box;
+    background-color: $color-background;
+}
+
+ul {
+    list-style-type: none;
+}

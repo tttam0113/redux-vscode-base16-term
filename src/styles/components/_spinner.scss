@@ -1,0 +1,18 @@
+.spinner {
+    animation: circular-rotate 1.4s linear infinite;
+    color: $color-secondary;
+    height: 4.8rem;
+    margin: 1.6rem;
+    width: 4.8rem;
+}
+
+.circle {
+    stroke: currentColor;
+
+    &--indeterminate {
+        animation: circular-dash 1.4s ease-in-out infinite;
+        //     // Some default value that looks fine waiting for the animation to kicks in.
+        stroke-dasharray: 80px 200px;
+        stroke-dashoffset: 0px; // Add the unit to fix a Edge 16 and below bug.
+    }
+}

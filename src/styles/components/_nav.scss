@@ -1,0 +1,17 @@
+nav {
+  a {
+    color: $default-text-color;
+    display: block;
+    padding: 1.6rem;
+    text-decoration: none;
+    
+    &:hover {
+      background-color: $nav-item-bg-color-hover;
+    }
+    
+    &.active,
+    &:focus {
+      background-color: $nav-item-bg-color-active;
+    }
+  }
+}

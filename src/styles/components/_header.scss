@@ -1,0 +1,23 @@
+header {
+  background-color: $header-bg-color;
+  box-shadow: $shadow-4;
+  &,
+  a {
+    color: $header-text-color;
+  }
+
+  h1 {
+    display: inline-block;
+    font-size: 2.4rem;
+    margin-top: 0;
+    margin-bottom: 1.6rem;
+
+    border-bottom: .1rem solid rgba($header-text-color, .2) small {
+      font-size: 1.6rem;
+    }
+  }
+
+  p {
+    margin-top: 0;
+  }
+}

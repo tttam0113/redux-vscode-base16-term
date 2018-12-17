@@ -1,0 +1,14 @@
+.theme {
+  text-align: center;
+
+  &,
+  h2 {
+    @include crossfade;
+  }
+
+  h2 {
+    font-size: calc(100% + 5vw);
+    margin: 0;
+
+  }
+}

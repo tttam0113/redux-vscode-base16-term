@@ -1,0 +1,263 @@
+.markdown-element {
+  color: $color-on-surface;
+  font-size: 1.6rem;
+
+  .anchor-link {
+    margin-top: -9.6rem; // Offset for the anchor.
+    position: absolute;
+  }
+
+  pre,
+  pre[class*="language-"] {
+    padding: 1.2rem 1.8rem;
+    margin: 2.4rem 0;
+    background-color: $color-background;
+    border-radius: 0.8rem;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  code {
+    background-color: $color-background;
+    color: $color-on-background;
+    display: inline-block;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    padding: .3rem .6rem;
+  }
+
+  p code,
+  ul code,
+  pre code {
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
+
+  h1 {
+    // ...theme.typography.h2,
+    font-weight: 300;
+    font-size: 3.75rem;
+    line-height: 1;
+    letter-spacing: -0.00833em;
+    margin: 3.2rem 0 1.6rem;
+  }
+
+  .description {
+    // ...theme.typography.h5,
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1;
+    letter-spacing: 0em;
+    margin: 0 0 4rem;
+  }
+
+  h2 {
+    // ...theme.typography.h4,
+    font-weight: 400;
+    font-size: 2.125rem;
+    line-height: 1.17;
+    letter-spacing: 0.00735em;
+    margin: 3.2rem 0 2.4rem;
+  }
+
+  h3 {
+    // ...theme.typography.h5,
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1;
+    letter-spacing: 0em;
+
+    // .loader {
+    //     border: 5px solid #f3f3f3; /* Light grey */
+    //     border-top: 5px solid #16d47b; /* Blue */
+    //     border-radius: 50%;
+    //     width: 50px;
+    //     height: 50px;
+    //     animation: spin 0.8s linear infinite;
+    //     margin: 20px auto;
+    // }
+    // .loader {
+    //     border: 5px solid #f3f3f3; /* Light grey */
+    //     border-top: 5px solid #16d47b; /* Blue */
+    //     border-radius: 50%;
+    //     width: 50px;
+    //     height: 50px;
+    //     animation: spin 0.8s linear infinite;
+    //     margin: 20px auto;
+    // }
+    // .loader {
+    //     border: 5px solid #f3f3f3; /* Light grey */
+    //     border-top: 5px solid #16d47b; /* Blue */
+    //     border-radius: 50%;
+    //     width: 50px;
+    //     height: 50px;
+    //     animation: spin 0.8s linear infinite;
+    //     margin: 20px auto;
+    // }
+    h4 {
+      // ...theme.typography.h6,
+      font-weight: 500;
+      font-size: 1.25rem;
+      line-height: 1.6;
+      letter-spacing: 0.0075em;
+      margin: 2.4rem 0 1.6rem;
+    }
+
+    p,
+    ul,
+    ol {
+      line-height: 1.6;
+    }
+
+    ol {
+      margin-left: 1.6rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      code {
+        font-size: inherit;
+        line-height: inherit;
+        // Remove scroll on small screens.
+        word-break: break-all;
+      }
+
+      .anchor-link-style {
+        opacity: 0;
+        // To prevent the link to get the focus.
+        display: none;
+      }
+
+      &:hover .anchor-link-style {
+        display: inline-block;
+        opacity: 1;
+        padding: 0 8px;
+        color: $color-on-secondary;
+
+        &:hover {
+          color: $color-secondary;
+        }
+
+        svg {
+          width: 0.55em;
+          height: 0.55em;
+          fill: currentColor;
+        }
+      }
+    }
+
+    table {
+      width: 100%;
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-collapse: collapse;
+      border-spacing: 0;
+      overflow: hidden;
+
+      .prop-name {
+        font-size: 13;
+        font-family: Consolas, "Liberation Mono", Menlo, monospace;
+      }
+
+      .required {
+        //color: theme.palette.type === 'light' ? '#006500' #9bc89b;
+        color: $color-on-background;
+      }
+
+      .prop-type {
+        font-size: 1.3rem;
+        font-family: Consolas, "Liberation Mono", Menlo, monospace;
+        // color: theme.palette.type === 'light' ? '#932981' #dbb0d0;
+        color: $color-secondary;
+      }
+
+      .prop-default {
+        font-size: 1.3rem;
+        font-family: Consolas, "Liberation Mono", Menlo, monospace;
+        border-bottom: 1px dotted $color-text-hint;
+      }
+    }
+
+    thead {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: $color-text-secondary; //theme.palette.text.secondary,
+    }
+
+    tbody {
+      font-size: 1.4rem;
+      line-height: 1.5;
+      color: $color-text-primary; //theme.palette.text.primary,
+    }
+
+    td {
+      border-bottom: 1px solid $color-on-surface;
+      padding: 8px 16px 8px 8px;
+      text-align: left;
+    }
+
+    td:last-child {
+      padding-right: 2.4rem;
+    }
+
+    td compact {
+      padding-right: 2.4rem;
+    }
+
+    td code {
+      font-size: 1.3rem;
+      line-height: 1.6;
+    }
+
+    th {
+      white-space: pre;
+
+      border-bottom: 1px solid $color-on-surface;
+      font-weight: 500;
+      padding: 0 16px 0 8px;
+      text-align: left;
+    }
+
+    th:last-child {
+      padding-right: 2.4rem;
+    }
+
+    tr {
+      height: 4.8rem;
+    }
+
+    thead tr {
+      height: 6.4rem;
+    }
+
+    strong {
+      font-weight: 500;
+    }
+
+    blockquote {
+      border-left: 5px solid $color-text-hint;
+      background-color: $color-background;
+      padding: 4px 24px;
+      margin: 24px 0;
+    }
+
+    a,
+    a code {
+      // Style taken from the Link component
+      color: $color-secondary;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

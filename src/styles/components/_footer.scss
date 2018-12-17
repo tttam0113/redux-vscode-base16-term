@@ -1,0 +1,17 @@
+footer {
+    background-color: $color-primary;
+    // border-bottom: 1px solid $color-on-surface;
+    color: $color-on-primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: $footer-height;
+    left: 0;
+    padding: 0 1.6rem;
+    right: 0;
+
+    p {
+        text-align: center;
+        margin-bottom: 1.3rem;
+    }
+}

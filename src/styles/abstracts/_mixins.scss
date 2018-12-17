@@ -1,0 +1,4 @@
+@mixin crossfade {
+  transition-property: color, border-color, background-color;
+  transition-duration: .3s;
+}

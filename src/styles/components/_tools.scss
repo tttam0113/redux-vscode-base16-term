@@ -1,0 +1,11 @@
+.tools {
+  button {
+    opacity: .5;
+    @include crossfade;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
