@@ -4,7 +4,7 @@ import ThemeView from 'views/ThemeView';
 const indexRoutes = [
   {
     name: 'ThemeView',
-    path: '/:themeId',
+    path: '/:themeId?',
     component: ThemeView,
     exact: true,
   },

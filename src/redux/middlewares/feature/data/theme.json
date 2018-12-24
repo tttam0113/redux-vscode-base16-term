@@ -1637,8 +1637,8 @@
     }
   },
   {
-    "id": "material",
-    "name": "Material",
+    "id": "materia",
+    "name": "Materia",
     "colors": {
       "terminal.background": "#263238",
       "terminal.foreground": "#CDD3DE",

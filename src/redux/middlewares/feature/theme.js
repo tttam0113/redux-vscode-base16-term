@@ -6,7 +6,7 @@ export default () => next => action => {
 
   switch (action.type) {
     case GET_THEMES: {
-      next(setThemes(themes));
+      next([setThemes(themes), setActiveTheme(themes[0].id)]);
       break;
     }
     case CHANGE_THEME: {
